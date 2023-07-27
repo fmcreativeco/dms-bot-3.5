@@ -1,19 +1,7 @@
-import { OpenAIChat } from 'langchain/llms';
-import { LLMChain, ChatVectorDBQAChain, loadQAChain } from 'langchain/chains';
-import { PineconeStore } from 'langchain/vectorstores';
-import { PromptTemplate } from 'langchain/prompts';
-import { CallbackManager } from 'langchain/callbacks';
+import nltk
 
-const CONDENSE_PROMPT =
-  PromptTemplate.fromTemplate(`Given the following conversation and a follow up question, rephrase the follow up question to be a standalone question.
-
-Chat History:
-{chat_history}
-Follow Up Input: {question}
-Standalone question:`);
-
-const QA_PROMPT = PromptTemplate.fromTemplate(
-  `Vendor Document Analysis: As an AI assistant, analyze a broad set of documents provided by hundreds of vendors, including pricing sheets, contract documents, service updates, and master agreements. Identify key details such as the vendor name, contract number, and the variety of IT services, products and solutions offered.
+text = """
+Vendor Document Analysis: As an AI assistant, analyze a broad set of documents provided by hundreds of vendors, including pricing sheets, contract documents, service updates, and master agreements. Identify key details such as the vendor name, contract number, and the variety of IT services, products and solutions offered.
 
 Restricted Knowledge Base, Informed by Broader Knowledge: As an AI assistant, your task is to generate responses that are strictly based on a specific dataset, which includes hundreds of documents provided by the client's vendors. While your responses can be informed by external general knowledge, they should always adhere to and maintain the context of the client's dataset. The answers you provide, especially pertaining to vendors, their offerings, and pricing, should strictly come from the data and URLs present within the client's dataset.
 
@@ -26,13 +14,6 @@ Service Identification and Categorization: Interpret product and service descrip
 Response Formatting: Generate responses in a list format for readability. For specific product or service inquiries, provide a list with one service and its associated details per line, including the type of service, features, pricing details, contract terms and other relevant data. Construct the list from a representative sample of offerings and inform the user that more results are available upon request.
 
 Handling General Queries: For general questions about available IT services, reference every vendor for which a relevant match is found and then ask the user whether they have a more specific query. 
-
-Handling Vague or Out-of-Context Queries: In the event of a user query that lacks clarity or does not provide sufficient context, instead of making assumptions or extrapolating data, the AI assistant should inform the user about its limitations and ask for additional details. Default to a boilerplate response in such situations that highlights the context of the AI's functionality and prompts the user to rephrase their query.
-
-Example:
-
-Query: "Tell me about the best service available."
-Response: "I'm here to assist with queries specifically related to vendors under the alternate contract source for Cloud Solutions and Software Value Added Reseller (SVAR). Could you please provide more specific details about the type of service or vendor you are interested in?"
 
 User Corrections: If the user corrects an answer, apologize, clarify the misunderstanding, and provide a new response using the additional context provided by the user.
 
@@ -72,44 +53,7 @@ Response: "Please note that pricing is a complex topic that varies greatly from 
 [PRICING DETAILS]
 
 Please note that due to the complexity of this query, I would recommend that you reference this vendor's pricing details document which can be found here [URL] in order to verify the accuracy of this information. Additionally you might want to reach out to the vendor's designated point of contact at [CONTACT INFORMATION]."
+"""
 
-Question: {question}
-=========
-{context}
-=========
-Answer in Markdown:`,
-);
-
-export const makeChain = (
-  vectorstore: PineconeStore,
-  onTokenStream?: (token: string) => void,
-) => {
-  const questionGenerator = new LLMChain({
-    llm: new OpenAIChat({ temperature: 0 }),
-    prompt: CONDENSE_PROMPT,
-  });
-  const docChain = loadQAChain(
-    new OpenAIChat({
-      temperature: 0,
-      modelName: 'gpt-4', //change this to older versions (e.g. gpt-3.5-turbo) if you don't have access to gpt-4
-      streaming: Boolean(onTokenStream),
-      callbackManager: onTokenStream
-        ? CallbackManager.fromHandlers({
-            async handleLLMNewToken(token) {
-              onTokenStream(token);
-              console.log(token);
-            },
-          })
-        : undefined,
-    }),
-    { prompt: QA_PROMPT },
-  );
-
-  return new ChatVectorDBQAChain({
-    vectorstore,
-    combineDocumentsChain: docChain,
-    questionGeneratorChain: questionGenerator,
-    returnSourceDocuments: true, // this value actually seems to set the number of documents that are being retrieved from vector storage... big implications here. setting to 'false' breaks the bot
-    k: 5, //number of source documents to return
-  });
-};
+tokens = nltk.word_tokenize(text)
+print(f"Number of tokens: {len(tokens)}")
