@@ -27,7 +27,11 @@ export default function Home() {
   }>({
     messages: [
       {
-        message: 'What information would you like to search within the contract database?',
+        message: 'Welcome to the DMS contract assistant proof of concept chat bot. I can currently help to retrieve contract and vendor information related to the [Cloud Solutions] and [Software Value Added Reseller (SVAR)] alternate contract sources for the State of Florida. Please note that this is a highly complex undertaking and that I represent an early stage prototype.',
+        type: 'apiMessage',
+      },
+      {
+        message: 'Here are a few examples of common queries that you may want to start with: \n- * Who are the SVAR vendors? \n- * Which vendors offer Cloud Solutions? \n- * How do I contact Accenture?',
         type: 'apiMessage',
       },
     ],
@@ -165,7 +169,7 @@ export default function Home() {
       <Layout>
         <div className="mx-auto flex flex-col gap-4">
           <h1 className="text-2xl font-bold leading-[1.1] tracking-tighter text-center">
-            Department of Management Services - State Term Contract Search
+            Department of Management Services - Contract Assistant POC
           </h1>
           <main className={styles.main}>
             <div className={styles.cloud}>
@@ -214,7 +218,7 @@ export default function Home() {
                       </div>
                       {message.sourceDocs && (
                         <div
-                          className="p-5"
+                          className="document-source-debug"
                           key={`sourceDocsAccordion-${index}`}
                         >
                           <Accordion
@@ -281,8 +285,8 @@ export default function Home() {
                     name="userInput"
                     placeholder={
                       loading
-                        ? 'Waiting for response...'
-                        : 'What would you like to find?'
+                        ? 'Processing your query...'
+                        : 'What information would you like to find?'
                     }
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
