@@ -26,6 +26,10 @@ export default function Home() {
     pendingSourceDocs?: Document[];
   }>({
     messages: [
+        {
+        message: '**The most recent changes to this model were applied at 4:52pm EST on July 28th 2023**',
+        type: 'apiMessage',
+      },
       {
         message: 'Welcome to the DMS contract assistant proof of concept chat bot. I can currently help to retrieve contract and vendor information related to the [Cloud Solutions] and [Software Value Added Reseller (SVAR)] alternate contract sources for the State of Florida. Please note that this is a highly complex undertaking and that I represent an early stage prototype.',
         type: 'apiMessage',
