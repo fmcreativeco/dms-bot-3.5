@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Hides the "Source" output from displaying at the bottom of each response from the chat bot. Comment this out to help debug which documents a response is pulling data from */
+/* Hides the "Source" output from displaying at the bottom of each response from the chat bot. Comment this out to help debug which documents a response is pulling data from 
 .document-source-debug {
   display: none;
-}
+} */
 
 /* Fixes bullet appearance in the API message output from the chatbot */
 .Home_markdownanswer__UUDfu > ul > li {
