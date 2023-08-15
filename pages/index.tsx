@@ -17,6 +17,9 @@ import {
 export default function Home() {
   const [query, setQuery] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(false);
+  {/* Rob added button abort state variable */}
+  const [ctrl, setCtrl] = useState<AbortController | null>(null); 
+  {/* Rob added button abort state variable */}
   const [sourceDocs, setSourceDocs] = useState<Document[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [messageState, setMessageState] = useState<{
@@ -81,7 +84,8 @@ export default function Home() {
     setQuery('');
     setMessageState((state) => ({ ...state, pending: '' }));
 
-    const ctrl = new AbortController();
+    const newCtrl = new AbortController();
+    setCtrl(newCtrl);
 
     try {
       fetchEventSource('/api/chat', {
@@ -93,8 +97,11 @@ export default function Home() {
           question,
           history,
         }),
-        signal: ctrl.signal,
+        signal: newCtrl.signal,
         onmessage: (event) => {
+          {/* Rob adding debugging breadcrumbs... */}
+          console.log("onmessage called", event.data);
+          {/* Rob adding debugging breadcrumbs... */}
           if (event.data === '[DONE]') {
             setMessageState((state) => ({
               history: [...state.history, [question, state.pending ?? '']],
@@ -111,6 +118,7 @@ export default function Home() {
             }));
             setLoading(false);
             ctrl.abort();
+            setCtrl(null);
           } else {
             const data = JSON.parse(event.data);
             if (data.sourceDocs) {
@@ -133,6 +141,28 @@ export default function Home() {
       console.log('error', error);
     }
   }
+
+  {/* Rob added new function for 'Stop' button */}
+  function handleStop() {
+  if (ctrl) {
+    console.log("Aborting the output generation...");
+    ctrl.abort();
+    setCtrl(null);
+    setLoading(false);
+
+    setMessageState((prevState) => ({
+      ...prevState,
+      messages: [
+        ...prevState.messages,
+        {
+          type: 'apiMessage',
+          message: 'Request has been cancelled.',
+        },
+      ],
+    }));
+    }
+  }
+  {/* Rob added new function for 'Stop' button */}
 
   //prevent empty submissions
   const handleEnter = useCallback(
@@ -278,6 +308,7 @@ export default function Home() {
             <div className={styles.center}>
               <div className={styles.cloudform}>
                 <form onSubmit={handleSubmit}>
+                  <div className={styles.inputGroup}>
                   <textarea
                     disabled={loading}
                     onKeyDown={handleEnter}
@@ -316,6 +347,17 @@ export default function Home() {
                       </svg>
                     )}
                   </button>
+                  </div>
+                  {/* Rob added 'Stop' button */}
+                  <button 
+                  type="button" 
+                  onClick={handleStop} 
+                  disabled={!loading} 
+                  className={`py-2 px-4 bg-red-500 text-white rounded ${!loading ? 'opacity-50 cursor-default' : ''}`} 
+                  >
+                  Stop Generating
+                  </button>
+                  {/* Rob added 'Stop' button */}
                 </form>
               </div>
             </div>
