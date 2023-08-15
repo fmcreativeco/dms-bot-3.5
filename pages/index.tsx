@@ -17,9 +17,9 @@ import {
 export default function Home() {
   const [query, setQuery] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(false);
-  {/* Rob added button abort state variable */}
-  const [ctrl, setCtrl] = useState<AbortController | null>(null); 
-  {/* Rob added button abort state variable */}
+  // Rob added button abort state variable */}
+  const controllerRef = useRef<AbortController | null>(null);
+  // Rob added button abort state variable */}
   const [sourceDocs, setSourceDocs] = useState<Document[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [messageState, setMessageState] = useState<{
@@ -84,8 +84,12 @@ export default function Home() {
     setQuery('');
     setMessageState((state) => ({ ...state, pending: '' }));
 
-    const newCtrl = new AbortController();
-    setCtrl(newCtrl);
+    // Rob check and abort any ongoing request
+    if (controllerRef.current) {
+        controllerRef.current.abort();
+    }
+
+    controllerRef.current = new AbortController();
 
     try {
       fetchEventSource('/api/chat', {
@@ -97,7 +101,7 @@ export default function Home() {
           question,
           history,
         }),
-        signal: newCtrl.signal,
+        signal: controllerRef.current.signal,
         onmessage: (event) => {
           {/* Rob adding debugging breadcrumbs... */}
           console.log("onmessage called", event.data);
@@ -117,8 +121,6 @@ export default function Home() {
               pendingSourceDocs: undefined,
             }));
             setLoading(false);
-            ctrl.abort();
-            setCtrl(null);
           } else {
             const data = JSON.parse(event.data);
             if (data.sourceDocs) {
@@ -142,12 +144,11 @@ export default function Home() {
     }
   }
 
-  {/* Rob added new function for 'Stop' button */}
+  // Rob added new function for 'Stop' button */}
   function handleStop() {
-  if (ctrl) {
-    console.log("Aborting the output generation...");
-    ctrl.abort();
-    setCtrl(null);
+  if (controllerRef.current) {
+    console.log("Aborting the output generation");
+    controllerRef.current.abort();  
     setLoading(false);
 
     setMessageState((prevState) => ({
@@ -162,7 +163,7 @@ export default function Home() {
     }));
     }
   }
-  {/* Rob added new function for 'Stop' button */}
+  // Rob added new function for 'Stop' button */}
 
   //prevent empty submissions
   const handleEnter = useCallback(
