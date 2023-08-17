@@ -30,7 +30,7 @@ export default function Home() {
   }>({
     messages: [
         {
-        message: '**The most recent changes to this model were applied at 10:14pm EST on August 14th 2023**',
+        message: '**The most recent changes to this model were applied at 8:22pm EST on August 17th 2023**',
         type: 'apiMessage',
       },
       {

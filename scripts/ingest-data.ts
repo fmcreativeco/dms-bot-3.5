@@ -29,6 +29,16 @@ export const run = async () => {
     console.log('split docs', docs);
 
     console.log('creating vector store...');
+
+    /* TESTING - Remove comment to enable
+    // Display metadata for the first few 3 documents
+    for (let i = 0; i < Math.min(3, docs.length); i++) {
+      console.log("Document Metadata:", docs[i].metadata);
+    // If docs[i] has an ID, you can log it too:
+      console.log("Document ID:", docs[i].id);
+    }
+    */ 
+
     /*create and store the embeddings in the vectorStore*/
     const embeddings = new OpenAIEmbeddings();
     const index = pinecone.Index(PINECONE_INDEX_NAME); //change to your own index name

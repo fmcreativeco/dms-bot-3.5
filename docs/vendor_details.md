@@ -1,13 +1,49 @@
+### Contract Details for *CLOUD SOLUTIONS*
+
+Effective Period: 08/01/2017 through 09/30/2026
+Contract Type: Alternate Contract Source
+Commodity Codes: Please refer to "How to Use This Contract" in the Contract Information section above.
+
+The DMS Contract Administrator for *CLOUD SOLUTIONS* with contract number 43230000-NASPO-16-ACS is:
+Bradley Beech
+850-487-9847
+brad.beech@dms.fl.gov
+
 ### Vendor Details for *CLOUD SOLUTIONS*
 
-The DMS Contract Administrator for *CLOUD SOLUTIONS* with contraxt number 43230000-NASPO-16-ACS is:
-Frank Miller
-850-488-8855
-frank.miller@dms.fl.gov
+Start and end dates vary by contractor:
+
+Accenture LLP: 10/13/2022 through 9/15/2026
+Atos IT Solutions and Services, Inc.: 01/16/2019 through 09/15/2026
+Carahsoft: 07/31/2017 through 09/30/2026
+CenturyLink Communications, LLC dba Lumen: 03/29/2022 through 09/15/2026
+CherryRoad Technologies: 07/31/2017 through 09/15/2026
+CSRA State and Local Solutions LLC: 09/25/2017 through 09/15/2026
+Deloitte Consulting LLP: 07/31/2017 through 09/30/2026
+DLT Solutions: 09/25/2017 through 09/30/2021, 01/05/2022 through 09/15/2026
+EC America, Inc.: 09/15/2021 through 09/15/2026
+ECS Federal, LLC: 04/30/2019 through 09/30/2026
+Ensono, LLC (formerly Ensono, LP): 08/11/2021 through 09/15/2026
+GuideSoft, Inc. dba Knowledge Services: 07/31/2017 through 09/15/2026
+Hewlett Packard Enterprise Company: 05/27/2021 through 09/15/2026
+Insight Public Sector, Inc.: 09/25/2017 through 09/30/2026
+Kyndryl, Inc.: 06/28/2022 through 09/15/2026
+NTT DATA, Inc: 09/25/2017 through 09/30/2026
+NWN Corporation: 09/20/2022 through 09/15/2026
+Presidio Networked Solutions LLC: 02/26/2021 through 09/15/2026
+Quest Media and Supplies, Inc.: 03/02/2021 through 09/15/2026
+SHI International Corp.: 09/25/2017 through 09/15/2026
+Smartronix, Inc.: 09/25/2017 through 09/30/2026
+Strategic Cloud Communications, LLC: 03/12/2021 through 09/15/2026
+The Consultants Consortium, Inc. dba TCC Software Solutions: 01/16/2019 through 09/30/2026
+Unisys Corp.: 07/31/2017 through 09/30/2026
+Visionary Integration Professionals, LLC: 11/1/2022 through 09/15/2026
+WellSky Corporation: 08/03/2020 through 09/30/2021, 01/11/2022 through 09/15/2026
 
 #### Accenture LLP
 FEIN: 36-4467428
 Website: www.accenture.com
+Pricing Sheet: https://s3-us-west-2.amazonaws.com/naspovaluepoint/1652711550_Accenture%20-%20Price%20Catalog%20(updated%20May%202022).pdf
  
 Customer Contact
 Name: KRISTEN JEWELL
@@ -24,6 +60,7 @@ Address: 3800 ESPLANADE WAY #100, TALLAHASSEE, FL 32311
 #### Atos IT Solutions and Services, Inc.
 FEIN: 13-3715291
 Website: www.atos.net
+Pricing Sheet: https://s3-us-west-2.amazonaws.com/naspovaluepoint/1532371433_Atos%20-%20Price%20Sheet%207-2018.xlsx
 
 Customer Contact
 Name: CYNTHIA VOSS
@@ -38,6 +75,7 @@ Address: 4851 REGENT BLVD, IRVING, TX 75063
 
 #### Carasoft
 FEIN: 52-2189693
+Pricing Sheet: https://drive.google.com/drive/folders/1f_4d2cGKe7PiCJw97Yy9NlNWu7GbTada
 
 Contract Administrator
 Name: Colby Bender
@@ -51,6 +89,7 @@ Fax Number: 703-871-8505
 #### CenturyLink Communications, LLC dba Lumen
 FEIN: 04-6141739
 Website: https://www.lumen.com/public-sector/state-local/state-local-government.html
+Pricing Sheet: https://s3-us-west-2.amazonaws.com/naspovaluepoint/1642180515_Lumen%20-%20Price%20Schedule%20(updated%20December%202021).xlsx
  
 Customer Contact
 Name: GEORGE DALTON
@@ -67,6 +106,7 @@ Address: 714 WASHINGTON ST. SE, OLYMPIA, WA 98501
 #### CherryRoad Technologies
 FEIN: 20-5084389
 Website: www.cherryroad.com
+Pricing Sheet: https://s3-us-west-2.amazonaws.com/naspovaluepoint/1689942163_91598862_CherryRoad%20-%20IAAS%20PAAS%20SAAS%20Price%20Catalog%207.12.2023.xls
 
 Customer Contact
 Name: AMY WERTHMANN
@@ -83,6 +123,7 @@ Address: 6 UPPER POND ROAD, 2ND FLOOR, PARSIPPANY, NJ 07054
 #### CSRA State and Local Solutions LLC
 FEIN: 47-3094025
 Website: www.csra.com
+Pricing Sheet: https://s3-us-west-2.amazonaws.com/naspovaluepoint/1480616204_10_CH16012_CSRA_Vol_2_Pricing_Catalog.xlsx
 
 Customer Contact
 Name: BRUCE SIZEMORE
@@ -99,6 +140,7 @@ Address: P.O. BOX 3170 FAIRVIEW PARK DRIVE, FALLS CHURCH, VA 22042
 #### Deloitte Consulting LLP
 FEIN: 06-1454513
 Website: www.deloitte.com
+Pricing Sheet: https://s3-us-west-2.amazonaws.com/naspovaluepoint/1643149150_Deloitte%20-%20Price%20Catalog%20(updated%20January%202022).pdf
 
 Customer Contact
 Name: DAVID FRIEDMAN
@@ -115,6 +157,7 @@ Address: 101 S 2ND ST APT 304, HARRISBURG, PA 17101
 #### DLT Solutions
 FEIN: 54-1599882
 Website: www.dlt.com
+Pricing Sheet: https://s3-us-west-2.amazonaws.com/naspovaluepoint/1646808467_DLT%20-%20Price%20Catalog%20(updated%20March%202022).xlsx
 
 Customer Contact
 Email: gwac@dlt.com
@@ -130,6 +173,7 @@ Address: 2411 DULLES CORNER PARK, SUITE 800, HERNDON, VA 20171
 #### EC America, Inc.
 FEIN: 52-2085893
 Website: https://immixgroup.com/government/
+Pricing Sheet: https://s3-us-west-2.amazonaws.com/naspovaluepoint/1620402771_556806984_EC%20America%20Appendix%20C%20Cost%20Proposal%20(2)%20(003).xlsx
 
 Customer Contact
 Name: KALLIE LUTCHER
@@ -146,6 +190,7 @@ Address: 8444 WESTPARK DRIVE SUITE 200, MCLEAN, VA 22102
 #### ECS Federal, LLC
 FEIN: 59-3176720
 Website: www.ecstech.com
+Pricing Sheet: https://s3-us-west-2.amazonaws.com/naspovaluepoint/1525472124_ECS%20Cloud%20Solutions%20Catalog%20-%205-2018.pdf
 
 Customer Contact
 Name: LAUREN GRAY
@@ -162,6 +207,7 @@ Address: 2750 PROSPERITY AVENUE, SUITE 600, FAIRFAX, VA 22031
 #### Ensono, LLC (formerly Ensono, LP)
 FEIN: 36-2992650
 Website: https://www.ensono.com
+Pricing Sheet: https://www.dms.myflorida.com/content/download/153268/1018987/file/1650606309_ENSONO%20-%20Price%20Catalog%20(April%202022).xlsx
 
 Customer Contact
 Name: BOB POPE
@@ -177,10 +223,12 @@ Address: 3333 FINLEY RD, DOWNERS GROVE, IL 60515
 
 #### GuideSoft, Inc. dba Knowledge Services
 This vendor's contact details are not currently available. Please visit their landing page on the DMS website for more information.
+Pricing Sheet: https://s3-us-west-2.amazonaws.com/naspovaluepoint/1559317342_Knowledge%20Services%20-%20Price%20Catalog%20(5-30-19).pdf
 
 #### Hewlett Packard Enterprise Company
 FEIN: 47-3298624
 Website: https://www.hpe.com/us/en/home.html
+Pricing Sheet: https://s3-us-west-2.amazonaws.com/naspovaluepoint/1570822788_HPE%20-%20Price%20Catalog.xls
 
 Customer Contact
 Name: GEORGE RIEMER
@@ -197,6 +245,7 @@ Address: 1701 EAST MOSSY OAKS ROAD, SPRING, TX 77389
 #### Insight Public Sector, Inc.
 FEIN: 36-3949000
 Website: www.ips.insight.com
+Pricing Sheet: https://s3-us-west-2.amazonaws.com/naspovaluepoint/1550691207_Insight%20Public%20-%20Price%20File%202.15.2019.xlsx
 
 Customer Contact
 Name: STEPHEN FORSYTHE
@@ -213,6 +262,7 @@ Address: 6820 S. HARL AVE., TEMPE, AZ 85283
 #### Kyndryl, Inc.
 FEIN: 86-1182761
 Website: www.kyndryl.com
+Pricing Sheet: https://s3-us-west-2.amazonaws.com/naspovaluepoint/1635529765_Kyndryl%20-%20Price%20Catalog%20(updated%20October%202021).xlsx
 
 Customer Contact
 Name: BRUCE STEADMAN
@@ -229,6 +279,7 @@ Address: ONE VANDERBILT AVE. 15TH FLOOR, NEW YORK, NY 10017
 #### NTT DATA, Inc
 FEIN: 04-2437166
 Website: https://us.nttdata.com/en
+Pricing Sheet: https://s3-us-west-2.amazonaws.com/naspovaluepoint/1548265477_NTT%20Data%20-%20Cost%20Proposal%20-%20Revision%201-2019.pdf
 
 Customer Contact
 Name: Robert de Cardenas
@@ -246,6 +297,7 @@ Remit to Address: 100 City Square, Boston, MA 02129
 #### NWN Corporation
 FEIN: 04-3532235
 Website: www.nwncarousel.com
+Pricing Sheet: https://s3-us-west-2.amazonaws.com/naspovaluepoint/1620770994_NWN%20NASPO%20Cloud%20SaaS_Master%20Catalog%20-%20May%202021.xlsx
 
 Customer Contact
 Name: DAVID LINDQUIST
@@ -262,6 +314,7 @@ Address: 659 SOUTH COUNTY TRAIL, EXETER, RI 02822
 #### Presidio Networked Solutions LLC
 FEIN: 58-1667655
 Website: https://presidio.com
+Pricing Sheet: https://s3-us-west-2.amazonaws.com/naspovaluepoint/1657153353_Presidio%20-%20Price%20Catalog%20(updated%20July%202022).xlsx
  
 Customer Contact
 Name: EMILY PHARES
@@ -278,6 +331,7 @@ Address: 8647 BAYPINE RD, STE 100, BLDG 1, JACKSONVILLE, FL 32256
 #### Quest Media and Supplies, Inc.
 FEIN: 94-2838096
 Website: www.questsys.com
+Pricing Sheet: https://s3-us-west-2.amazonaws.com/naspovaluepoint/1607701851_Quest_Price_List_12-10-2020_AR2505_CloudSolutions-locked.XLSX
 
 Customer Contact
 Name: AMY COMI
@@ -294,6 +348,7 @@ Address: 9000 FOOTHILLS BLVD. STE. 100, ROSEVILLE, CA 95747
 #### SHI International Corp.
 FEIN: 22-3009648
 Website: www.shi.com
+Pricing Sheet: https://drive.google.com/drive/folders/1nRJRPb-9RXnAPrKKaEOiuOk5SivINPeS
  
 Customer Contact
 Name: BRET SANTUCCI
@@ -309,6 +364,7 @@ Additional Information
 FloridaGOV@shi.com is the alias for our greater inside sales team.  They can be reached at 800-543-0432 for order status updates, tracking, and licensing delivery questions.
 
 #### Smartronix, Inc.
+Pricing Sheet: https://s3-us-west-2.amazonaws.com/naspovaluepoint/1542309886_Updated%20NASPO%20Pricing%20Notes%20and%20Explanations%20-%20Nov%2014,%202018.pdf
 
 Customer Contact
 Name: Jamie Moore
@@ -332,6 +388,7 @@ Toll Free Phone Number: 703-435-3322
 #### Strategic Cloud Communications, LLC
 FEIN: 61-1271313
 Website: www.yourstrategic.com
+Pricing Sheet: https://drive.google.com/drive/folders/1MB9MsNQgs6T3HmMT7Q2GSbSl8W5uH8Np?usp=sharing
 
 Customer Contact
 Name: BLAKE KELLY
@@ -348,6 +405,7 @@ Address: 310 EVERGREEN ROAD, LOUISVILLE, KY 40243
 #### The Consultants Consortium, Inc. dba TCC Software Solutions
 FEIN: 35-1990942
 Website: www.e-tcc.com
+Pricing Sheet: https://s3-us-west-2.amazonaws.com/naspovaluepoint/1519848931_TCC%20-%20Price%20File%202-2018.xlsx
 
 Customer Contact
 Name: Mike Boyle
@@ -360,6 +418,7 @@ Remit to Address: 1022 East 52nd Street Indianapolis, IN 46205
 #### Unisys Corp.
 FEIN: 38-0387840
 Website: www.unisys.com
+Pricing Sheet: https://s3-us-west-2.amazonaws.com/naspovaluepoint/1545932658_UNISYS%20NASPO%20Cost%20Proposal%20Winter%202019%20(1).pdf
  
 Customer Contact
 Name: HENRY "JOHNNY" ROWLAND
@@ -376,6 +435,7 @@ Address: 801 LAKEVIEW DRIVE, BLUE BELL, PA 19422
 #### Visionary Integration Professionals, LLC
 FEIN: 20-2969301
 Website: www.trustvip.com
+Pricing Sheet: https://drive.google.com/drive/folders/1winv-x7EhdKVLeQgDepmaYx06f8qk2lW?usp=sharing
 
 Customer Contact
 Email: legal@trustvip.com
@@ -391,6 +451,7 @@ Address: 80 IRON POINT CIRCLE, SUITE 100, FOLSOM, CA 95630
 #### WellSky Corporation
 FEIN: 11-2209324
 Website: www.wellsky.com
+Pricing Sheet: https://s3-us-west-2.amazonaws.com/naspovaluepoint/1616723952_1609874581_WellSky%20NASPO%20Revised%20Pricing%2003232021_Clean.xlsx
  
 Customer Contact
 Name: VINCE VECCHIARELLI
@@ -404,19 +465,23 @@ Email: sarah.rapelye@wellsky.com
 Phone: 913-307-1084
 Address: 11300 SWITZER ROAD, OVERLAND PARK, KS 66210
 
+### Contract Details for *SOFTWARE VALUE ADDED RESELLER (SVAR)*
 
-
-
-### Vendor Details for *SOFTWARE VALUE ADDED RESELLER (SVAR)*
+Effective Period: 03/21/2023 through 04/24/2027
+Contract Type: Alternate Contract Source
+Commodity Codes: Please refer to "How to Use This Contract" in the Contract Information section above.
 
 The DMS Contract Administrator for *SOFTWARE VALUE ADDED RESELLER (SVAR)* with contract number 43230000-23-NASPO-ACS is:
 Frank Miller
 850-488-8855
 frank.miller@dms.fl.gov
 
+### Vendor Details for *SOFTWARE VALUE ADDED RESELLER (SVAR)*
+
 #### accel bi corporation
 FEIN: 91-2080160
 Website: https://www.accelbi.com/
+Pricing Sheet: https://www.dms.myflorida.com/content/download/158739/1050780/file/Exh.%20C_Price%20Sheet_accel%20bi.pdf
 
 Customer Contact
 Name: SANJAY SHIRUDE
@@ -433,6 +498,7 @@ Address: 2406 185TH PL NE, REDMOND, WA 98052
 #### CDW Government LLC
 FEIN: 36-4230110
 Website: www.cdwg.com
+Pricing Sheet: https://www.dms.myflorida.com/content/download/158740/1050786/file/CDW-G_SVAR_Exh.%20C_FL%20Price%20Sheet_6-8-23_web%20version.pdf
 
 Customer Contact
 Name: HEATHER KOHLS
@@ -449,6 +515,7 @@ Address: 625 W. ADAMS, CHICAGO, IL 60661
 #### SHI International Corp.
 FEIN: 22-3009648
 Website: www.shi.com
+Pricing Sheet: https://www.dms.myflorida.com/content/download/158743/1050822/file/Exh.%20C_Price%20Sheet_SHI_4-12-23.pdf
 
 Customer Contact
 Email: floridagov@shi.com
@@ -464,6 +531,7 @@ Address: 290 DAVIDSON AVENUE, SOMERSET, NJ 08873-4179
 #### Insight Public Sector, Inc.
 FEIN: 36-3949000
 Website: www.ips.insight.com
+Pricing Sheet: https://www.dms.myflorida.com/content/download/158746/1050849/file/Exh.%20C_Price%20Sheet_Insight.pdf
 
 Customer Contact
 Name: STEPHEN FORSYTHE
